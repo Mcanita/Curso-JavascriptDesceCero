@@ -59,4 +59,69 @@ console.warn('// ! RESTO DE LA DIVISIÓN ');//MÓDULO
 resultado = num1 % num2;
 console.log(`el resto de la divicion de ${num1 } y ${num2} es ${resultado}`);
 
-console.warn('// !');
+console.warn('// !POTENCIACIÓN');
+resultado = num1 ** num2;
+console.log(`la potencia de ${num1} elevado a ${num2} es ${resultado}`);
+
+// ! DEBUGGER -> Es una herramienta que permite analizar mi código paso a paso, encontrar errores.
+// ? 2 maneras para arrancar a trabajar con el debugger
+// * escribiendo en nuestro código la palabra debugger
+// * la segunda es en la pestaña de Dev Tools > Source > y colocando los Breakpoints
+
+
+console.log(/* Operadores de comparacion */);
+
+/*
+Nombre                 |    Simbolo
+--------------------------------
+mayor                  |    >
+menor                  |    <
+igual                  |    == ( ! evitar - valores -> no tipos)
+igualdad estricta      |    ===
+mayor o igual          |    >=
+menor o igual          |    <=
+distinto               |    != ( ! evitar - valores -> no tipos )
+distinto estricto      |    !==
+
+*/ 
+
+// ! El resultado de la comparacion va a ser un booleano
+
+let num3 = 9
+let num4 = 5
+
+console.warn(`// ! mayor`);
+let resultadoComparacion = num3 > num4
+console.log(`la comparacion entre ${num3} y ${num4} es ${resultadoComparacion}`);
+
+console.warn(`// ! menor`);
+resultadoComparacion = num3 < num4
+console.log(`la comparacion entre ${num3} y ${num4} es ${resultadoComparacion}`);
+
+let num5 = '9'
+
+console.warn(`// ! igualdad (no estricta)`);
+resultadoComparacion = num3 == num5
+console.log(`la comparacion entre ${num3} y ${num5} es ${resultadoComparacion}`);
+
+console.warn(`// ! igualdad estricta`);
+resultadoComparacion = num3 === num5
+console.log(`la comparacion entre ${num3} y ${num5} es ${resultadoComparacion}`);
+
+console.warn(`// ! mayor/igual`);
+resultadoComparacion = num3 >= num4
+console.log(`la comparacion entre ${num3} y ${num4} es ${resultadoComparacion}`);
+
+console.warn(`// ! menor/igual`);
+resultadoComparacion = num3 <= num4
+console.log(`la comparacion entre ${num3} y ${num4} es ${resultadoComparacion}`);
+
+let num6 = '9'
+
+console.warn(`// ! distinto`);
+resultadoComparacion = num3 != num6
+console.log(`la comparacion entre ${num3} y ${num6} distinto es ${resultadoComparacion}`);
+
+console.warn(`// ! distinto estricto`);
+resultadoComparacion = num3 !== num6
+console.log(`la comparacion entre ${num3} y ${num6} distinto estricto es ${resultadoComparacion}`);
