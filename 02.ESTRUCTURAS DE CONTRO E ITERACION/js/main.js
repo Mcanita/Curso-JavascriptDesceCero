@@ -3,7 +3,7 @@
 // import { cursoJavaScript, PI } from "./constantes.js";  // agregar manualmente el .js si no aparece // !(1) 
 // import { cursoJavaScript, PI } from "./constantes.js"; // !(2)
 import constantesPrincipales from "./constantes.js"; // ! (3)
-import "./ifs.js" // asi importo lo que hay en ifs.js
+
 
 // Formas no oficiales para modularizar nuestras aplicaciones
 // * CommonJS
@@ -19,3 +19,7 @@ import "./ifs.js" // asi importo lo que hay en ifs.js
 //console.log(cursoJavaScript); // ! (1) y (2)
 console.log(constantesPrincipales.PI);  // !(3)
 console.log(constantesPrincipales.cursoJavaScript);// !(3)
+
+import "./ifs.js" // asi importo lo que hay en ifs.js
+import "./switchs.js" 
+import "./fors.js" 
