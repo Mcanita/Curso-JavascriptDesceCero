@@ -44,7 +44,7 @@ function promedio(nota1, nota2, nota3){
 let resultadoPromedio = promedio(4,8,10)
 console.log(resultadoPromedio.toFixed(2));//cantidad de decimales
 
-// ! funcion anonima
+// ! funcion anonima -> no tiene nombre
 let nombre = 'maximiliano' // asigno string
                             //asigno una funcion
 let nombreApellido = function(nombre, apellido){
@@ -58,3 +58,37 @@ console.log(nombreCompleto); //! ;
 (function(valor){  // necesita que anteriormente haya un ';'
     console.log(`Hola a ${valor}!!!`)
 })('todos')
+
+// ! CALLBACK -> es una funcion pasada como argumento a otra funcion 
+
+let texto1 = function(){
+    console.log('soy el texto 1');
+}
+
+texto1 ()// <----soy el texto 1 
+// ! estoy imprimiendo en consola la 'referencia de una función'
+console.log(texto1); // <----- funtion(){console.log('soy el texto 1 )}
+
+
+function test(num1,callback){
+    console.log(num1);
+    console.log(callback);
+}
+
+test(4, texto1) // <--- paso una funcion (la referencia de una funcion) como argumento de otra función
+
+function ir (callback){
+    if(queSeaDiaHabil && horarioBnacario){
+        callback()// <---- depositar
+    }else{
+        console.log('no puedo ir al banco');
+    }
+}
+
+function tareaDepositar(){
+    console.log('saludar');
+    console.log('pedir turno');
+    console.log('hablar con el cajero');
+}
+
+ir(tareaDepositar)
